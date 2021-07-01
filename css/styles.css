@@ -5,22 +5,23 @@
 body {
     /* font-family: 'Barlow', sans-serif; */
     font-family: 'Fraunces', serif, Arial;
+    font-weight: 700;
     font-size: 16px;
 
-    /* width: 100%; */
+    /* max-width: 1200px;
+    margin: 0 auto; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header"
                          "main"
                          "footer";
-    /* grid-template-areas: "header header header header"
-                         "article-1 article-1 img-1 img-1"
-                         "img2 img2 article2 article2"
-                         "img3 img3 img4 img4"
-                         "testimonials testimonials testimonials testimonials"
-                         "gallery gallery gallery gallery"
-                         "footer footer footer footer"; */
+}
+
+p {
+    font-family: 'Barlow', serif, Arial;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 img {
@@ -105,35 +106,118 @@ n.nav-headerav > a:active {
 
 .main > .articles {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, auto);
-    grid-template-areas: "article-1 article-1 img-1 img-1"
-                         "img2 img2 article2 article2"
-                         "img3 img3 img4 img4";
+    grid-template-areas: "article-1 img-1"
+                         "img2 article2"
+                         "img3 img4";
+}
+
+.articles img {
+    width: 100%;
 }
 
 .article-1 {
     grid-area: article-1;
 }
 
+.articles > .article-design {
+    width: 100%;
+    height: 770px;
+    padding: 1rem 8rem 3rem 8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-1 > h2,
+.article-2 > h2 {
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.article-1 > p,
+.article-2 > p {
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    color: #808080;
+    font-size: 1.1rem;
+}
+
+.article-1 a, 
+.article-2 a {
+    /* display: block; */
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    letter-spacing: 6px;
+}
+
+.article-1 a:hover {
+    border-bottom: hsl(51, 100%, 49%) 5px solid;
+    border-radius: 10px;
+}
+
 .img-1 {
-    grid-area: img-1
+    grid-area: img-1;
+    background: url("../images/desktop/image-transform.jpg") center center no-repeat;
+    background-size: cover;
 }
 
 .img-2 {
-    grid-area: img2
+    grid-area: img2;
+    background: url("../images/desktop/image-stand-out.jpg") center center no-repeat;
+    background-size: cover;
 }
 
 .article-2 {
-    grid-area: article2
+    grid-area: article2;
+}
+
+.article-2 a:hover {
+    border-bottom: hsl(7, 99%, 70%) 5px solid;
+    border-radius: 10px;
 }
 
 .img-3 {
     grid-area: img3;
+    background: url("../images/desktop/image-graphic-design.jpg") center center no-repeat;
+    background-size: cover;
 }
 
 .img-4 {
     grid-area: img4;
+    background: url("../images/desktop/image-photography.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.img-3 > .contenido,
+.img-4 > .contenido {
+    height: 700px;
+    text-align: center;
+    padding-top: 23rem;
+    padding-bottom: 0;
+}
+
+.contenido .font-img-3 {
+    color:hsl(167, 40%, 24%);
+}
+
+.contenido .font-img-4 {
+    color:hsl(198, 62%, 26%);
+}
+
+.contenido h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.contenido p {
+    line-height: 2rem;
+    padding: 0rem 8rem;
+
 }
 
 .main > .testimonials {
