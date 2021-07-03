@@ -226,10 +226,16 @@ n.nav-headerav > a:active {
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "title"
                          "people";
+    margin: 8rem 0;
 }
 
 .testimonials > .title {
     grid-area: title;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 900;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 4rem;
 }
 
 .testimonials > .people {
@@ -237,6 +243,10 @@ n.nav-headerav > a:active {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "testimonial-1 testimonial-2 testimonial-3";
+    gap: 2rem;
+    width: 70%;
+    margin: 0rem auto;
+    text-align: center;
 }
 
 .people > .testimonial-1 {
@@ -247,6 +257,49 @@ n.nav-headerav > a:active {
 }
 .people > .testimonial-3 {
     grid-area: testimonial-3;
+}
+
+.people .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 6rem;
+    height: 6rem;
+    margin: 4rem auto;
+}
+
+.people .image {
+    width: 100%;
+}
+
+.people .description {
+    color: hsl(232, 10%, 55%);
+    line-height: 2rem;
+}
+
+.people .center-final {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.people .author {
+    font-family: 'Fraunces', serif, Arial;
+    font-weight: 900;
+    margin-bottom: 0
+}
+
+.people .ocupation {
+    color: hsl(210, 4%, 67%);
+    font-size: .9rem;
 }
 
 .main > .mini-gallery {

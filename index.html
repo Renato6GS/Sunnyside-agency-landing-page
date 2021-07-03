@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <meta name="description" content="Landing page de Sunnyside Agency">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link type="image/png" href="./images/favicon-32x32.png" rel="icon" sizes="32x32">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   
@@ -13,22 +13,22 @@
   <script src="https://kit.fontawesome.com/a78e078d10.js" crossorigin="anonymous"></script>
   
   <!-- Normalize -->
-  <link rel="stylesheet" href="./normalize/normalize.css">
+  <link href="./normalize/normalize.css" rel="stylesheet">
   
   <!-- Fonts -->
   <!-- Barlow 600, Fraunces 700/900 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- Creo que debemos de poner un backgour img al header de la naranja -->
   <header class="header">
     <div class="logo">
-      <img src="./images/logo.svg" alt="">
+      <img src="./images/logo.svg" alt>
     </div>
     <nav class="nav-header">
       <a href="#">About</a>
@@ -90,39 +90,51 @@
     <section class="testimonials">
       <h2 class="title">CLIENT TESTIMONIALS</h2>
       <section class="people">
-        <div class="testimonial-1">
-          <img src="./images/image-emily.jpg" alt="Emily R.">
+        <div class="testimonial-card testimonial-1">
+          <div class="avatar">
+            <img class="image" src="./images/image-emily.jpg" alt="Emily R.">
+          </div>
           <p class="description">We put our in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <p class="author">Emily R.</p>
-          <p class="ocupation">Marketing Director</p>
+          <div class="center-final">
+            <p class="author">Emily R.</p>
+            <p class="ocupation">Marketing Director</p>
+          </div>
         </div>
-        <div class="testimonial-2">
-          <img src="./images/image-thomas.jpg" alt="Thomas S.">
+        <div class="testimonial-card testimonial-2">
+          <div class="avatar">
+            <img class="image" src="./images/image-thomas.jpg" alt="Thomas S.">
+          </div>
           <p class="description">Sunnyside´s enthusiasm coupled with their keen interest in our brand´s success made it a satisfying and enjoyable experience.</p>
-          <p class="author">Thomas S.</p>
-          <p class="ocupation">Chief Operatin Officer</p>
+          <div class="center-final">
+            <p class="author">Thomas S.</p>
+            <p class="ocupation">Chief Operatin Officer</p>
+          </div>
         </div>
-        <div class="testimonial-3">
-          <img src="./images/image-jennie.jpg" alt="Jennie F.">
+        <div class="testimonial-card testimonial-3">
+          <div class="avatar">
+            <img class="image" src="./images/image-jennie.jpg" alt="Jennie F.">
+          </div>
           <p class="description">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Hihgly recommeded!</p>
-          <p class="author">Jennie F.</p>
-          <p class="ocupation">Business Owner</p>
+          <div class="center-final">
+            <p class="author">Jennie F.</p>
+            <p class="ocupation">Business Owner</p>
+          </div>
         </div>
       </section>
     </section>
 
     <section class="mini-gallery">
-      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles" title="Milk bottles">
-      <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange" title="Orange">
-      <img src="./images/desktop/image-gallery-cone.jpg" alt="Cone" title="Cone">
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes" title="Sugar cubes">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" title="Milk bottles" alt="Milk bottles">
+      <img src="./images/desktop/image-gallery-orange.jpg" title="Orange" alt="Orange">
+      <img src="./images/desktop/image-gallery-cone.jpg" title="Cone" alt="Cone">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" title="Sugar cubes" alt="Sugar cubes">
     </section>
 
   </main>
 
   <footer class="footer">
     <div class="logo">
-      <img src="./images/logo.svg" alt="" styles={background: red}>
+      <img src="./images/logo.svg" alt styles="{background:" red}>
     </div>
 
     <nav class="enlaces-footer">
@@ -132,10 +144,10 @@
     </nav>
 
     <div class="redes-sociales">
-      <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.pinterest.com" class="pinterest"><i class="fab fa-pinterest"></i></a>
+      <a class="facebook" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a class="instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a class="twitter" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+      <a class="pinterest" href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
     </div>
   </footer>
   <!-- <div class="attribution">
