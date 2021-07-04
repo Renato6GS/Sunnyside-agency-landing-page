@@ -27,15 +27,16 @@
 
   <!-- Creo que debemos de poner un backgour img al header de la naranja -->
   <header class="header">
+    <a name="header"></a>
     <div class="logo">
       <img src="./images/logo.svg" alt>
     </div>
     <div class="bars" id="active-bars"></div>
     <nav class="nav-header" id="container-nav">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
     <h2 class="title" id="title-header">WE ARE CREATIVES</h2>
     <div class="arrow-down" id="arrow-header">
@@ -45,8 +46,8 @@
 
   <main class="main">
 
+    <a name="about"></a>
     <section class="articles">
-
       <article class="article-1 article-design">
         <h2>Transform your brand</h2>
         <p>
@@ -74,6 +75,7 @@
       </article>
      
       <div class="img-3">
+        <a name="services"></a>
         <div class="contenido">
           <h2 class="font-img-3">Graphic Design</h2>
           <p class="font-img-3">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients´ attention.</p>
@@ -88,6 +90,7 @@
       </div>
     </section>
 
+    <a name="projects"></a>
     <section class="testimonials">
       <h2 class="title">CLIENT TESTIMONIALS</h2>
       <section class="people">
@@ -134,8 +137,15 @@
   </main>
 
   <footer class="footer">
+    <a name="contact"></a>
+
+    <div class="regresar">
+      <!-- <a href="#header"><img src="./images/flecha-hacia-arriba.png" alt="Inicio" width="32px"></a> -->
+      <a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+
     <div class="logo">
-      <img src="./images/logo.svg" alt styles="{background:" red}>
+      <img src="./images/logo.svg"}>
     </div>
 
     <nav class="enlaces-footer">
