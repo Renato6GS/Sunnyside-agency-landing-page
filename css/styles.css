@@ -1,9 +1,26 @@
+:root {
+    --color-yellow-primary: hsl(51, 100%, 49%);
+    --color-soft-red: hsl(7, 99%, 70%);
+    --color-dark-cyan: hsl(167, 40%, 24%);
+    --color-dark-blue: hsl(198, 62%, 26%);
+    --color-grayish-blue: hsl(210, 4%, 67%);
+    --color-dark-grayish-blue: hsl(232, 10%, 55%);
+    --color-cyan: #90d4c5;
+    --color-white-alpha-4: rgba(255, 255, 255, 0.4);
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-gray: #808080;
+
+    --font-primary: 'Fraunces', serif, Arial;
+    --font-secondary: 'Barlow', serif, Arial
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Fraunces', serif, Arial;
+    font-family: var(--font-primary);
     font-weight: 700;
     font-size: 16px;
     display: grid;
@@ -15,7 +32,7 @@ body {
 }
 
 p {
-    font-family: 'Barlow', serif, Arial;
+    font-family: var(--color-font-secondary);
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -51,6 +68,7 @@ img {
 
 .header > .bars {
     display: none;
+    cursor: pointer;
 }
 
 .header > .logo {
@@ -64,7 +82,7 @@ img {
 .nav-header > a {
     text-align: center;
     display: block;
-    color: #FFF;
+    color: var(--color-white);
     text-decoration: none;
     margin-right: 3rem;
     font-weight: 700;
@@ -73,20 +91,20 @@ img {
 }
 
 .nav-header > a:hover {
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 15px 20px;
-    color: #000;
+    color: var(--color-black);
     border-radius: 30px;
 }
 
-n.nav-headerav > a:active {
-    background-color: rgba(255, 255, 255, .4)
+.nav-header > a:active {
+    background-color: var(--color-white-alpha-4)
 }
 
 .header > h2 {
     width: 100%;
     text-align: center;
-    color: #FFF;
+    color: var(--color-white);
     letter-spacing: 20px;
     font-size: 3rem;
     margin-bottom: 10rem;
@@ -141,21 +159,21 @@ n.nav-headerav > a:active {
 .article-2 > p {
     margin-bottom: 2rem;
     line-height: 2.5rem;
-    color: #808080;
+    color: var(--color-gray);
     font-size: 1.1rem;
 }
 
 .article-1 a, 
 .article-2 a {
     text-decoration: none;
-    color: #000000;
+    color: var(--color-black);
     font-size: 1.2rem;
     cursor: pointer;
     letter-spacing: 6px;
 }
 
 .article-1 a:hover {
-    border-bottom: hsl(51, 100%, 49%) 5px solid;
+    border-bottom: var(--yellow-primary) 5px solid;
     border-radius: 10px;
 }
 
@@ -176,7 +194,7 @@ n.nav-headerav > a:active {
 }
 
 .article-2 a:hover {
-    border-bottom: hsl(7, 99%, 70%) 5px solid;
+    border-bottom: var(--color-soft-red) 5px solid;
     border-radius: 10px;
 }
 
@@ -201,11 +219,11 @@ n.nav-headerav > a:active {
 }
 
 .contenido .font-img-3 {
-    color:hsl(167, 40%, 24%);
+    color: var(--color-dark-cyan);
 }
 
 .contenido .font-img-4 {
-    color:hsl(198, 62%, 26%);
+    color: var(--color-dark-blue);
 }
 
 .contenido h2 {
@@ -234,7 +252,7 @@ n.nav-headerav > a:active {
     text-align: center;
     letter-spacing: 8px;
     font-weight: 900;
-    color: hsl(210, 4%, 67%);
+    color: var(--color-grayish-blue);
     margin-bottom: 4rem;
 }
 
@@ -278,7 +296,7 @@ n.nav-headerav > a:active {
 }
 
 .people .description {
-    color: hsl(232, 10%, 55%);
+    color: var(--color-dark-grayish-blue);
     line-height: 2rem;
 }
 
@@ -292,13 +310,13 @@ n.nav-headerav > a:active {
 }
 
 .people .author {
-    font-family: 'Fraunces', serif, Arial;
+    font-family: var(--font-primary);
     font-weight: 900;
     margin-bottom: 0
 }
 
 .people .ocupation {
-    color: hsl(210, 4%, 67%);
+    color: var(--color-grayish-blue);
     font-size: .9rem;
 }
 
@@ -315,7 +333,7 @@ n.nav-headerav > a:active {
 /* ============================ footer ============================ */
 .footer {
     grid-area: footer;
-    background-color: #90d4c5;
+    background-color: var(--color-cyan);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,12 +356,12 @@ n.nav-headerav > a:active {
 
 .enlaces-footer > a {
     text-align: center;
-    color: hsl(167, 40%, 24%);
+    color: var(--color-dark-cyan);
     text-decoration: none;
 }
 
 .enlaces-footer > a:hover {
-    color: #FFF
+    color: var(--color-white)
 }
 
 .footer > .redes-sociales {
@@ -353,11 +371,11 @@ n.nav-headerav > a:active {
 }
 
 .redes-sociales > a {
-    color: hsl(167, 40%, 24%);
+    color: var(--color-dark-cyan);
 }
 
 .redes-sociales > a:hover {
-    color: #FFF;
+    color: var(--color-white)
 }
 
 @media screen and (max-width: 800px) {
@@ -437,7 +455,7 @@ n.nav-headerav > a:active {
         align-items: center;
         position: relative;
         top: 3.3rem;
-        color: #000;
+        color: var(--color-black);
         width: 90%;
         left: 2rem;
     }
@@ -446,7 +464,7 @@ n.nav-headerav > a:active {
         content: "";
         width: 100%;
         height: 100%;
-        background-color: #FFF;
+        background-color: var(--color-white);
         position: absolute;
         z-index: 1;
     }
@@ -459,7 +477,7 @@ n.nav-headerav > a:active {
         position: absolute;
         right: 0;
         bottom: 24.5rem;
-        border-left: 50px solid #fff;
+        border-left: 50px solid var(--color-white);
         border-top: 35px solid transparent;
         border-bottom: 35px solid transparent; 
         z-index: 3;
@@ -467,17 +485,17 @@ n.nav-headerav > a:active {
 
     .menu-bar a {
         display: block;
-        color: hsl(210, 4%, 67%);
+        color: var(--color-grayish-blue);
         z-index: 2;
         margin-left: 3rem;
         margin: 1.5rem 0;
     }
 
     .menu-bar a:hover {
-        background-color: hsl(51, 100%, 49%);
+        background-color: var(--color-yellow-primary);
         padding: 15px 20px;
         border-radius: 30px;
-        color: #000;
+        color: var(--color-black);
     }
 
     .title-none {
