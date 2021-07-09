@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <meta name="description" content="Landing page de Sunnyside Agency">
 
-  <link type="image/png" href="./images/favicon-32x32.png" rel="icon" sizes="32x32">
+  <link type="image/png" href="./static/img/favicon-32x32.png" rel="icon" sizes="32x32">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Íconos font-awesome 5 -->
   <script src="https://kit.fontawesome.com/a78e078d10.js" crossorigin="anonymous"></script>
   
   <!-- Normalize -->
-  <link href="./vendors/normalize/normalize.css" rel="stylesheet">
+  {{!-- <link href="./vendors/normalize/normalize.css" rel="stylesheet"> --}}
   
   <!-- Fonts -->
   <!-- Barlow 600, Fraunces 700/900 -->
@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
   <!-- <link href="css/styles.css" rel="stylesheet"> -->
-  <link href="./dist/styles-dist.min.css" rel="stylesheet">
+  {{!-- <link href="./dist/styles-dist.min.css" rel="stylesheet"> --}}
 </head>
 <body>
 
@@ -29,7 +29,7 @@
   <header class="header">
     <a name="header"></a>
     <div class="logo">
-      <img src="./images/logo.svg" alt>
+      <img src="./static/img/logo.svg" alt>
     </div>
     <div class="bars" id="active-bars"></div>
     <nav class="nav-header" id="container-nav">
@@ -40,7 +40,7 @@
     </nav>
     <h2 class="title" id="title-header">WE ARE CREATIVES</h2>
     <div class="arrow-down" id="arrow-header">
-      <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+      <img src="./static/img/icon-arrow-down.svg" alt="arrow-down">
     </div>
   </header>
 
@@ -96,7 +96,7 @@
       <section class="people">
         <div class="testimonial-card testimonial-1">
           <div class="avatar">
-            <img class="image" src="./images/image-emily.jpg" alt="Emily R.">
+            <img class="image" src="./static/img/image-emily.jpg" alt="Emily R.">
           </div>
           <p class="description">We put our in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
           <div class="center-final">
@@ -106,7 +106,7 @@
         </div>
         <div class="testimonial-card testimonial-2">
           <div class="avatar">
-            <img class="image" src="./images/image-thomas.jpg" alt="Thomas S.">
+            <img class="image" src="./static/img/image-thomas.jpg" alt="Thomas S.">
           </div>
           <p class="description">Sunnyside´s enthusiasm coupled with their keen interest in our brand´s success made it a satisfying and enjoyable experience.</p>
           <div class="center-final">
@@ -116,7 +116,7 @@
         </div>
         <div class="testimonial-card testimonial-3">
           <div class="avatar">
-            <img class="image" src="./images/image-jennie.jpg" alt="Jennie F.">
+            <img class="image" src="./static/img/image-jennie.jpg" alt="Jennie F.">
           </div>
           <p class="description">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Hihgly recommeded!</p>
           <div class="center-final">
@@ -128,10 +128,10 @@
     </section>
 
     <section class="mini-gallery">
-      <img src="./images/desktop/image-gallery-milkbottles.jpg" title="Milk bottles" alt="Milk bottles">
-      <img src="./images/desktop/image-gallery-orange.jpg" title="Orange" alt="Orange">
-      <img src="./images/desktop/image-gallery-cone.jpg" title="Cone" alt="Cone">
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" title="Sugar cubes" alt="Sugar cubes">
+      <img src="./static/img/desktop/image-gallery-milkbottles.jpg" title="Milk bottles" alt="Milk bottles">
+      <img src="./static/img/desktop/image-gallery-orange.jpg" title="Orange" alt="Orange">
+      <img src="./static/img/desktop/image-gallery-cone.jpg" title="Cone" alt="Cone">
+      <img src="./static/img/desktop/image-gallery-sugarcubes.jpg" title="Sugar cubes" alt="Sugar cubes">
     </section>
 
   </main>
@@ -140,12 +140,12 @@
     <a name="contact"></a>
 
     <div class="regresar">
-      <!-- <a href="#header"><img src="./images/flecha-hacia-arriba.png" alt="Inicio" width="32px"></a> -->
+      <!-- <a href="#header"><img src="./static/img/flecha-hacia-arriba.png" alt="Inicio" width="32px"></a> -->
       <a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
     </div>
 
     <div class="logo">
-      <img src="./images/logo.svg"}>
+      <img src="./static/img/logo.svg"}>
     </div>
 
     <nav class="enlaces-footer">
@@ -166,6 +166,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <script src="js/app.js"></script>
+  {{!-- <script src="js/app.js"></script> --}}
 </body>
 </html>

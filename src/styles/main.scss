@@ -49,7 +49,7 @@ img {
 .header {
     grid-area: header;
     margin: 0px 0px;
-    background: url("../images/desktop/image-header.jpg") skyblue center center no-repeat;
+    background: url("../static/img/desktop/image-header.jpg") skyblue center center no-repeat;
     background-size: cover;
     /* height: 1000px; */
     height: 100vh;
@@ -185,13 +185,13 @@ img {
 
 .img-1 {
     grid-area: img-1;
-    background: url("../images/desktop/image-transform.jpg") center center no-repeat;
+    background: url("../static/img/desktop/image-transform.jpg") center center no-repeat;
     background-size: cover;
 }
 
 .img-2 {
     grid-area: img2;
-    background: url("../images/desktop/image-stand-out.jpg") center center no-repeat;
+    background: url("../static/img/desktop/image-stand-out.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -206,13 +206,13 @@ img {
 
 .img-3 {
     grid-area: img3;
-    background: url("../images/desktop/image-graphic-design.jpg") center center no-repeat;
+    background: url("../static/img/desktop/image-graphic-design.jpg") center center no-repeat;
     background-size: cover;
 }
 
 .img-4 {
     grid-area: img4;
-    background: url("../images/desktop/image-photography.jpg") center center no-repeat;
+    background: url("../static/img/desktop/image-photography.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -455,7 +455,7 @@ img {
         height: 2rem;
         width: 2rem;
         margin-top: .4rem;
-        background: url("../images/icon-hamburger.png") center center;
+        background: url("../static/img/icon-hamburger.png") center center;
         background-size: 2rem 2rem;
         margin-right: .9rem;
     }
