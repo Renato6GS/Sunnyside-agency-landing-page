@@ -19,7 +19,9 @@ const imageRules = {
             // To get relative path you can use
             const relativePath = path.relative(context, resourcePath);
 
-            if (`src\\static\\img\\desktop\\${url}` === relativePath) {
+            // console.log(path.resolve(__dirname, ))
+
+            if (`src${path.sep}static${path.sep}img${path.sep}desktop${path.sep}${url}` === relativePath) {
               return `static/img/desktop/${url}`;
             }
 
